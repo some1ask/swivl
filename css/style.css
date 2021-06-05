@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("./fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.wrapper {
+  box-sizing: border-box;
+  padding: 0 120px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#header {
+  background-color: #fff;
+  padding-top: 25px;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.06);
+}
+
+.header__upper__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__lower__items {
+  display: flex;
+  justify-content: space-between;
+}
+.header__profile {
+  display: flex;
+  align-items: center;
+}
+.header__profile__name {
+  font: 400 16px/20px "OpenSans";
+  color: #3E4056;
+  padding-right: 20px;
+}
+.header__profile__image {
+  position: relative;
+}
+.header__profile__image img {
+  width: 32px;
+  height: 32px;
+}
+.header__profile__image:after {
+  position: absolute;
+  top: 12px;
+  left: 46px;
+  content: "";
+  width: 6px;
+  height: 6px;
+  transform: rotate(-45deg);
+  border: 2px solid #3E4056;
+  border-top: none;
+  border-right: none;
+}
+.header__profile__icons {
+  margin-left: 40px;
+  display: flex;
+  flex-grow: 1;
+}
+.header__profile__icons__share {
+  background-image: url("../../img/share.svg");
+  width: 32px;
+  height: 32px;
+}
+.header__profile__icons__notification {
+  background-image: url("../../img/notification.svg");
+  width: 32px;
+  height: 32px;
+}
+.header__profile__icons__medium {
+  background-image: url("../../img/medium.svg");
+  width: 32px;
+  height: 32px;
+}
+
+.header__tabs {
+  font: 600 14px/20px "OpenSans";
+  padding-top: 25px;
+  color: #3E4056;
+}
+.header__tabs__list {
+  list-style: none;
+}
+.header__tabs__list__item {
+  display: inline-block;
+  opacity: 0.6;
+  margin-right: 40px;
+  padding-bottom: 25px;
+}
+.header__tabs__list__item__active {
+  opacity: 1;
+  border-bottom: 4px solid red;
+  border-image: linear-gradient(135deg, #FF974F 0%, #E32C75 100%) 1 stretch;
+}
+.header__tabs__list__item a {
+  text-decoration: none;
+  color: #3E4056;
+}
+
+.header__action__button {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+  border-radius: 50%;
+}
+.header__action__button__wrapper {
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.header__action__button::after, .header__action__button::before {
+  position: absolute;
+  content: "";
+  top: 32px;
+  left: 22px;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+}
+.header__action__button::before {
+  transform: rotate(90deg);
+}
+
+/*# sourceMappingURL=style.css.map */

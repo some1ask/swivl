@@ -1,0 +1,27 @@
+.header__action__button {
+    &__wrapper {
+        position: relative;
+        width: $icon-width*2;
+        height: $icon-height*2;
+    }
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: $icon-width*2;
+    height: $icon-height*2;
+    background: $primary-gradient;
+    border-radius: 50%;
+    &::after,
+    &::before {
+        position: absolute;
+        content: '';
+        top: 32px;
+        left: 22px;
+        width: 20px;
+        height: 2px;
+        background: $primary-color;
+    }
+    &::before {
+        transform: rotate(90deg);
+    }
+}
