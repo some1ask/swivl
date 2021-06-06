@@ -5,4 +5,4 @@ to run project clone it and run these commands:
 - npm i
 - npm run build
 
-or just open the document
+or just clone the repo
