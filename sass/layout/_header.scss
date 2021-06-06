@@ -10,19 +10,31 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        @include phone {
+            flex-direction: column;
+        }
     }
     &__lower__items {
         display: flex;
         justify-content: space-between;
+        @include phone {
+            justify-content: center;
+        }
     }
     &__profile {
         display: flex;
         align-items: center;
+        @include phone {
+            margin-top: 20px;
+        }
     }
     &__profile__name {
         font: 400 16px/20px 'OpenSans';
         color: $primary-font-color;
         padding-right: 20px;
+        @include phone {
+            padding-right: 10px;
+        }
     }
     &__profile__image {
         position: relative;

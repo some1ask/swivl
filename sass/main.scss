@@ -1,4 +1,10 @@
 @import 'base/module';
+@import 'base/media';
 @import 'layout/header';
+@import 'layout/main';
 @import 'components/header-tabs';
 @import 'components/header-action-button';
+@import 'components/user-profile-dropdown';
+@import 'components/user-profile';
+@import 'components/switcher';
+@import 'components/card';

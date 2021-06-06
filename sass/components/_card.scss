@@ -1,0 +1,131 @@
+    .card__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        @include phone {
+            margin-top: 30px;
+            justify-content: center;
+        }
+        &__item {
+            box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.12);
+            background: $primary-color;
+            border-radius: 14px;
+            flex: 1 1 375px;
+            height: 280px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            @include phone {
+                margin-right: 0px;
+                height: 235px;
+            }
+            @include phone-s {
+                width: 200px;
+            }
+        }
+        &__item__subtitle {
+            padding: 24px 24px 0 24px;
+            font: 400 16px/20px OpenSans;
+            color: $primary-font-color;
+            @include phone {
+                padding: 15px 5px 5px 5px;
+                font: 400 13px/15px Montserrat;
+                width: 150px;
+            }
+            .shared__to {
+                background: #ECF1F8;
+                border-radius: 6px;
+                padding: 3px 5px;
+                @include phone {
+                    display: inline-block;
+                    white-space: pre-line;
+                }
+            }
+            .shared__via {
+                position: relative;
+                padding-left: 20px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 32px;
+                    height: 32px;
+                    top: 0px;
+                    left: 0px;
+                    background: url('/img/icon_link.svg') no-repeat;
+                }
+            }
+        }
+        &__item__title {
+            width: 325px;
+            font: 400 36px/42px Montserrat;
+            color: $primary-font-color;
+            padding: 56px 24px 44px 24px;
+            @include phone {
+                padding: 56px 5px 75px 5px;
+                width: 200px;
+                font: 400 20px/22px Montserrat;
+            }
+        }
+        &__item__title.type2 {
+            padding: 5px 24px 44px 24px;
+            @include phone {
+                padding: 35px 5px 45px 5px;
+                font: 400 20px/22px Montserrat;
+            }
+        }
+        &__item__picture {
+            width: 24px;
+            height: 25px;
+            background: #B2B3BB;
+            border-radius: 50%;
+        }
+        &__item__info {
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font: 400 18px/25px OpenSans;
+            color: $additional-font-color;
+            @include phone {
+                padding: 0 5px;
+            }
+        }
+        &__item__author {
+            display: flex;
+            align-items: center;
+            &__name {
+                font: 600 14px/19px OpenSans;
+                padding-left: 10px;
+                color: $primary-font-color;
+            }
+        }
+        &__item__actions {
+            display: flex;
+            width: 80px;
+            position: relative;
+            justify-content: space-between;
+            color: $primary-font-color;
+        }
+        &__item__action__view {
+            &::before {
+                position: absolute;
+                content: '';
+                width: 16px;
+                height: 16px;
+                top: 4px;
+                left: -20px;
+                background-image: url('/img/icon_view.svg');
+            }
+        }
+        &__item__action__like {
+            &::before {
+                position: absolute;
+                content: '';
+                width: 16px;
+                height: 16px;
+                top: 4px;
+                left: 40px;
+                background: url('/img/icon_like.svg') no-repeat;
+            }
+        }
+    }

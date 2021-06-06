@@ -1,0 +1,92 @@
+.user__profile {
+    &__details {
+        &__dropdown {
+            position: relative;
+            @include phone {
+                visibility: hidden;
+            }
+            &__icon {
+                width: 32px;
+                height: 32px;
+                background: url('/img/dots_menu.svg') no-repeat;
+            }
+        }
+    }
+    &__wrapper {
+        flex-basis: 33%;
+        @include desktop {
+            flex-basis: 50%;
+        }
+    }
+    &__avatar__wrapper {
+        img {
+            width: 120px;
+            height: 120px;
+        }
+        @include phone {
+            margin-right: 20px;
+        }
+        @include phone-s {
+            margin-right: 0px;
+        }
+    }
+    &__main__info {
+        display: flex;
+        justify-content: space-between;
+        @include phone {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__name {
+        font: 600 24px/26px Montserrat;
+        color: $primary-font-color;
+        padding-bottom: 10px;
+    }
+    &__nickname {
+        font: 400 16px/20px OpenSans;
+        padding-bottom: 15px;
+        color: $primary-font-color;
+    }
+    &__edit {
+        display: flex;
+        &__icon {
+            background-image: url('/img/edit_icon.svg');
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        &__caption {
+            font: 400 16px/20px OpenSans;
+            color: $additional-font-color;
+            text-decoration: underline;
+        }
+    }
+    &__stats {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding-top: 32px;
+        padding-right: 40px;
+        @include phone {
+            padding-right: 0;
+        }
+        &__synths,
+        &__followers,
+        &__following {
+            font: 400 16px/24px OpenSans;
+            color: $primary-font-color;
+        }
+    }
+    &__description {
+        padding-right: 40px;
+        padding-top: 25px;
+        font: 400 16px/24px OpenSans;
+        color: $primary-font-color;
+        @include phone {
+            padding-right: 0;
+            text-align: justify;
+        }
+    }
+}

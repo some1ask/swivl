@@ -1,0 +1,33 @@
+body {
+    background-color: $background;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    padding: 0 120px;
+    @include phone-s {
+        padding: 0 20px !important;
+    }
+    @include phone {
+        padding: 0 20px !important;
+    }
+    @include tablet {
+        padding: 0 30px;
+    }
+}
+
+.main__content__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+    @include phone {
+        flex-direction: column;
+    }
+}
+
+.content__wrapper {
+    flex-basis: 66%;
+    @include desktop {
+        flex-basis: 50%;
+    }
+}

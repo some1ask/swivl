@@ -3,6 +3,9 @@
         position: relative;
         width: $icon-width*2;
         height: $icon-height*2;
+        @include phone {
+            display: none;
+        }
     }
     position: absolute;
     left: 0;
@@ -23,5 +26,8 @@
     }
     &::before {
         transform: rotate(90deg);
+    }
+    @include phone {
+        display: none;
     }
 }
