@@ -85,17 +85,17 @@
   flex-grow: 1;
 }
 .header__profile__icons__share {
-  background-image: url("../../img/share.svg");
+  background-image: url("../img/share.svg");
   width: 32px;
   height: 32px;
 }
 .header__profile__icons__notification {
-  background-image: url("../../img/notification.svg");
+  background-image: url("../img/notification.svg");
   width: 32px;
   height: 32px;
 }
 .header__profile__icons__medium {
-  background-image: url("../../img/medium.svg");
+  background-image: url("../img/medium.svg");
   width: 32px;
   height: 32px;
 }
@@ -260,7 +260,7 @@ body {
   left: 12px;
   width: 32px;
   height: 32px;
-  background: url("/img/icon_report.svg") no-repeat;
+  background: url("../img/icon_report.svg") no-repeat;
 }
 .icon__block::before {
   position: absolute;
@@ -269,7 +269,7 @@ body {
   left: 12px;
   width: 32px;
   height: 32px;
-  background: url("/img/icon_block.svg") no-repeat;
+  background: url("../img/icon_block.svg") no-repeat;
 }
 
 .user__profile__details__dropdown {
@@ -283,7 +283,7 @@ body {
 .user__profile__details__dropdown__icon {
   width: 32px;
   height: 32px;
-  background: url("/img/dots_menu.svg") no-repeat;
+  background: url("../img/dots_menu.svg") no-repeat;
 }
 .user__profile__wrapper {
   flex-basis: 33%;
@@ -332,7 +332,7 @@ body {
   display: flex;
 }
 .user__profile__edit__icon {
-  background-image: url("/img/edit_icon.svg");
+  background-image: url("../img/edit_icon.svg");
   width: 20px;
   height: 20px;
   margin-right: 5px;
@@ -514,7 +514,7 @@ body {
   height: 32px;
   top: 0px;
   left: 0px;
-  background: url("/img/icon_link.svg") no-repeat;
+  background: url("../img/icon_link.svg") no-repeat;
 }
 .card__items__item__title {
   width: 325px;
@@ -580,7 +580,7 @@ body {
   height: 16px;
   top: 4px;
   left: -20px;
-  background-image: url("/img/icon_view.svg");
+  background-image: url("../img/icon_view.svg");
 }
 .card__items__item__action__like::before {
   position: absolute;
@@ -589,7 +589,7 @@ body {
   height: 16px;
   top: 4px;
   left: 40px;
-  background: url("/img/icon_like.svg") no-repeat;
+  background: url("../img/icon_like.svg") no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
