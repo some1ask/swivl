@@ -60,17 +60,17 @@
         display: flex;
         flex-grow: 1;
         &__share {
-            background-image: url('/img/share.svg');
+            background-image: url('../img/share.svg');
             width: $icon-width;
             height: $icon-height;
         }
         &__notification {
-            background-image: url('/img/notification.svg');
+            background-image: url('../img/notification.svg');
             width: $icon-width;
             height: $icon-height;
         }
         &__medium {
-            background-image: url('/img/medium.svg');
+            background-image: url('../img/medium.svg');
             width: $icon-width;
             height: $icon-height;
         }
